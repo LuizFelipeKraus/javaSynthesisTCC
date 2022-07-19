@@ -394,9 +394,6 @@ public class MainTests {
         ClassOrInterfaceDeclaration classe = mSkeleton.getClassByName("MainClass").get();
         
         
-        //classe.addMethod("main", Modifier.publicModifier().getKeyword(),Modifier.Keyword.STATIC);
-        //mSkeleton.addInterface(e.sample().toString());
-        
         List<MethodDeclaration> ms = classe.getMethods();
         
         MethodDeclaration m = ms.get(0);
@@ -404,6 +401,7 @@ public class MainTests {
         m.setBody(e.sample());        
         
         imprimiDados(mSkeleton);
+   
         compila("MainClass.java");
         
         JRGLog.showMessage(Severity.MSG_XDEBUG, "checkGenBlockStmt::fim");
@@ -620,5 +618,4 @@ public class MainTests {
         
         return true;
     }
-    //genTypeAssingStmt
 }

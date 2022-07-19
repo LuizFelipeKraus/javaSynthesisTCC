@@ -1,7 +1,4 @@
-MainClass.java:65: error: incompatible types: possible lossy conversion from double to float
-                float xy = -2.5149975E21;
-                           ^
-MainClass.java:75: error: incompatible types: possible lossy conversion from double to float
-        float fr = -6.7831855E14;
-                   ^
-2 errors
+MainClass.java:13: error: incompatible types: possible lossy conversion from double to float
+        float nk = 619.92 / -10679.85;
+                          ^
+1 error
